@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-top: 5px solid #d0d3d0;
+    box-shadow: 0 2px 4px rgba(255, 253, 253, 0.1);
+}
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+}
+.navbar a:hover {
+    color: #231f0d;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+section, form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    outline: 1px solid #111211;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #333;
+    outline: 1px solid #333;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+}
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #333;
+    margin-right: 10px;
+}
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+
+}
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+    cursor: pointer;
+}
+
+button[type="view"] {
+    background-color: #4CAF50;
+    color: white;
+}
+button[type="view"]:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+caption {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+hr{
+    border: 0;
+}
+
+nav#contact {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar a {
+        margin: 10px 0;
+    }
+    nav#contact {
+        width: 95%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOIST Student Registration System</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+    <img src="moist-logo.jpg" alt="MOIST Logo" class="logo">
+    <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Destinations">Registration</a>
+        <a href="#Tours">Student List</a>
+        <a href="#About">Enrollment Summary</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+</div>
+</header>
+
+    <section id="home" class="page-title">
+        <h1>Halseyle Hill Resort Garder</h1>
+        <br>
+            <p>
+                Set at the mountain top, overlooking the beauty of Camiguin Island
+            </p>
+    </section>
+
+<section id="registration" class="section">
+        <h2>Student Registration</h2>
+        <p class="description">Please fill out the form below with your complete information.</p>
+
+        <form>
+                <div class="form-grid">
+
+                <div class="form-group full">
+                    <label for="name">Enter Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Enter Email:</label>
+                    <input type="email" name="email" id="email" placeholder="ex: siajhone19@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Enter Pass:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Enter Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter Your Age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Enter Birthday:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Enter Your Gender:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" id="male" name="Gender" value="Male" required> Male</label>
+                            <label><input type="radio" id="female" name="Gender" value="Female"> Female</label>
+                            <label><input type="radio" id="rather" name="Gender" value="Rather not to say"> Rather not to say</label>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                        <select id="course" name="Course" required>
+                            <option value="">Select Course</option>
+                            <option value="BSIT">BS Information Technology</option>
+                            <option value="BSTM">BS Tourism Management</option>
+                            <option value="BEED">Bachelor of Elementary Education</option>
+                            <option value="BSED">Bachelor of Secondary Education</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Enter Year Level:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="Year Level" value="First Year" required> First Year</label>
+                        <label><input type="radio" name="Year Level" value="Second Year"> Second Year</label>
+                        <label><input type="radio" name="Year Level" value="Third Year"> Third Year</label>
+                        <label><input type="radio" name="Year Level" value="Fourth Year"> Fourth Year</label>
+                    </div>
+                </div>
+
+                <div class="form-group full">
+                    <label>Skill or Interest:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="skill" value="HTML"> HTML</label>
+                        <label><input type="checkbox" name="skill" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="skill" value="JavaScript"> JavaScript</label>
+                        <label><input type="checkbox" name="skill" value="Graphic Design"> Graphic Design</label>
+                        <label><input type="checkbox" name="skill" value="Networking"> Networking</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Enter Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+                </div>
+
+                <div class="form-group ">
+                    <label for="comment">Expectation:</label>
+                    <textarea id="comment" name="comment" placeholder="Comment or Expectation"></textarea>
+                </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="reset" class="clear">Clear</button>
+                    <button type="button" class="view">View</button>
+                </div>
+        </form>
+</section>
+
+<section id="students" class="section">
+    <h2>Registered Student Records</h2>
+    <table>
+        <tr>
+            <th>STUDENT NUMBER</th>
+            <th>FULL NAME</th>
+            <th>COURSE YEAR</th>
+            <th>LEVEL STATUS</th>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>Name</td>
+            <td>Year</td>
+            <td>Level</td>
+        </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+</table>
+</section>
+
+<section id="summary" class="section">
+    <h2>Student Enrollment Summary</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Number</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>BSIT</td>
+                <td>35</td>
+                <td><span class="open">OPEN</span></td>
+            </tr>
+            <tr>
+                <td>BSTM</td>
+                <td>25</td>
+                <td><span class="open">OPEN</span></td>
+            </tr>
+            <tr>
+                <td>BSED</td>
+                <td>30</td>
+                <td><span class="open">OPEN</span></td>
+            </tr>
+    </table>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>099***** / siajhone19@gmail.com</p>
+</section>
+
+<footer>
+    <p>MOIST Student Registration System © 2026</p>
+    <p>Jiu Gemilla | Krazielley Marylourd Narit | Jhone Sealtiel Sia</p>
+</footer>
+
+</body>
+</html>

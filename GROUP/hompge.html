@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MOIST STUDENT REGISTRATION SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#students">Student list</a></li>
+            <li><a href="#summary">Enrollment Summary</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <hr>
+
+    <section id="home">
+
+        <h2>Home</h2>
+
+        <p>
+            Welcome to the MOIST Student Registration System.
+        </p>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <form id="registration">
+        <label for="name" >Enter Name: </label>
+        <input type="text" placeholder="Enter Your Name" required>
+        <br>
+
+        <label for="email">Enter Email: </label>
+        <input type="email" name="email" id="email" placeholder="ex: sia19@gmail" required>
+        <br>
+
+        <label for="password">Enter Pass:</label>
+        <input type="password" placeholder="Enter Password" required>
+        <br>
+
+        <label for="age">Enter Age: </label>
+        <input type="number" placeholder="Enter Your Age" required>
+        <br>
+        <label for="birthdate">Enter Birthday: </label>
+        <input type="date" placeholder="Enter Your Birthdat" required>
+        <br>
+        <br>
+
+        <p>Enter Your Gender: </p>
+        <input type="radio" id="Male" name="Gender" value="Male" required>
+        <label for="gender">Male</label>
+
+        <input type="radio" id="Female" name="Gender" value="Female" required>
+        <label for="gender">Female</label>
+
+        <input type="radio" id="Rather not to say" name="Gender" value="Rather not to say" required>
+        <label for="gender">Rather not to say</label>
+
+        <br>
+
+        <label for="course">Course: </label>
+        <select id="course" name="Course" required>
+
+            <option value="">Select Course:</option>
+            <option value="">BS Information Technology</option>
+            <option value="">BS tourism Management </option>
+            <option value="">Bachelor of Elementary Education</option>
+            <option value="">Bacherlor of Secondary Education</option>
+        </select>
+
+        <p>Enter Year Level: </p>
+        <input type="radio" id="First Year" name="Year Level" value="First Year" required>
+        <label for="Year Level">First Year</label>
+
+        <input type="radio" id="Second Year" name="Year Level" value="Second Year" required>
+        <label for="Year Level">Second Year</label>
+
+        <input type="radio" id="Third Year" name="Year Level" value="Third Year" required>
+        <label for="Year Level">Third Year</label>
+
+        <input type="radio" id="Fourth Year" name="Year Level" value="Fourth Year" required>
+        <label for="Year Level">Fourth Year</label>
+
+        <br>
+        <p>Skill or Interest: </p>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" required>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" required>
+        <label for="HTML">CSS</label>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" required>
+        <label for="HTML">JavaScript</label>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" required>
+        <label for="HTML">Graphic Design</label>
+        <input type="checkbox" id="HTML" name="skill" value="HTML" required>
+        <label for="HTML">NetWorking</label>
+        <br> <br>
+
+        <label for="address">Enter Address: </label>
+        <br>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+        <br>
+
+        <label for="comment">Expectation: </label>
+        <br>
+        <textarea id="comment" name="comment" placeholder="Comment or Expectation"></textarea >
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        <button type="view">view</button>
+            <br>
+            <br>
+            <hr>
+    </form>
+<br>
+
+    <form id="students">
+        <table>
+            <caption><b>Registered Student Records</b></caption>
+
+            <tr>
+                <th>Student Number</th>
+                <th>Full Name</th>
+                <th>Course Year</th>
+                <th>Level Status</th>
+            </tr>
+
+                <tr>
+                    <td>Number</td>
+                    <td>Name</td>
+                    <td>year</td>
+                    <td>Level</td>
+                </tr>
+
+
+        </table>
+    </form>
+    <br>
+    <hr>
+    <form id="summary">
+        <table>
+            <caption><b>Student Enrollment Summary</b></caption>
+            <tr>
+                <th colspan="3" >Student Enrollment Summary</th>
+            </tr>
+
+                <tr>
+                    <td>Course</td>
+                    <td>Number</td>
+                    <td>Status</td>
+                </tr>
+
+                <tr>
+                    <td>BSIT</td>
+                    <td>35</td>
+                    <td>OPEN</td>
+                </tr>
+
+                <tr>
+                    <td>BSTM</td>
+                    <td>25</td>
+                    <td>OPEN</td>
+                </tr>
+
+                <tr>
+                    <td>BSED</td>
+                    <td>30</td>
+                    <td>OPEN</td>
+                </tr>
+                
+            
+        </table>
+    </form>
+
+    <nav id="contact">
+        
+        <h2>Contact</h2>
+        <p> 099***** / siajhone19@gmail.com</p>
+
+    </nav>
+</body>
+</html>
